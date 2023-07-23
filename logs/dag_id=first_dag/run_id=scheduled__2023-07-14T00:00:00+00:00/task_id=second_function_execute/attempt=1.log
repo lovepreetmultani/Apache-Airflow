@@ -1,0 +1,19 @@
+[2023-07-18T19:06:05.119+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: first_dag.second_function_execute scheduled__2023-07-14T00:00:00+00:00 [queued]>
+[2023-07-18T19:06:05.135+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: first_dag.second_function_execute scheduled__2023-07-14T00:00:00+00:00 [queued]>
+[2023-07-18T19:06:05.138+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 2
+[2023-07-18T19:06:05.170+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): second_function_execute> on 2023-07-14 00:00:00+00:00
+[2023-07-18T19:06:05.201+0000] {standard_task_runner.py:57} INFO - Started process 69 to run task
+[2023-07-18T19:06:05.226+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'first_dag', 'second_function_execute', 'scheduled__2023-07-14T00:00:00+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/first_dag.py', '--cfg-path', '/tmp/tmp4cttv05h']
+[2023-07-18T19:06:05.233+0000] {standard_task_runner.py:85} INFO - Job 24: Subtask second_function_execute
+[2023-07-18T19:06:05.536+0000] {task_command.py:410} INFO - Running <TaskInstance: first_dag.second_function_execute scheduled__2023-07-14T00:00:00+00:00 [running]> on host ab92f9d9cc0f
+[2023-07-18T19:06:06.060+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='lovepreet.multani20@gmail.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='first_dag' AIRFLOW_CTX_TASK_ID='second_function_execute' AIRFLOW_CTX_EXECUTION_DATE='2023-07-14T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-07-14T00:00:00+00:00'
+[2023-07-18T19:06:06.137+0000] {logging_mixin.py:150} INFO - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[2023-07-18T19:06:06.183+0000] {logging_mixin.py:150} INFO -         name              title
+0  Lovepreet  Software Engineer
+1       Aman   Business Analyst
+[2023-07-18T19:06:06.185+0000] {logging_mixin.py:150} INFO - @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+[2023-07-18T19:06:06.187+0000] {logging_mixin.py:150} INFO - I am in second_function_execute got value :first_function_execute says Hello  from Function 1  
+[2023-07-18T19:06:06.191+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-07-18T19:06:06.225+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=first_dag, task_id=second_function_execute, execution_date=20230714T000000, start_date=20230718T190605, end_date=20230718T190606
+[2023-07-18T19:06:06.384+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-07-18T19:06:06.482+0000] {taskinstance.py:2653} INFO - 1 downstream tasks scheduled from follow-on schedule check
