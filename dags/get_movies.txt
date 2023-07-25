@@ -1,0 +1,6 @@
+id,name,description,category
+1,Avatar,This is the description of Movie 1,Sci-Fi
+2,Avengers,This is the description of Movie 2,Sci-Fi
+3,Holidate,This is the description of Movie 3,Romcom
+4,Extraction,This is the description of Movie 3,Action
+5,John Wick,This is the description of Movie 3,Action
